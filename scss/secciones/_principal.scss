@@ -1,0 +1,84 @@
+
+main {
+    .tituloPrincipal {
+        grid-area: tituloPrincipal;
+        background-color: $backgroundTituloPrincipalIndex;
+        animation-name: tituloAnimacion;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-width: 100vw;
+        h1 {
+            @include hIndex(10px,20vw,0px,30px,60vw)
+        }
+        h2 {
+            @include hIndex(0px,10vw,20px,20px,80vw)
+        }
+        &:hover {
+            transition: 2s;
+            background-color: rgb(243, 126, 126);
+        }
+    }
+
+    .imagenBebidas {
+        @include imagenBebidasAccesorios(imagenBebidas);
+        img {
+            @extend %imgIndex;
+        }
+        p {
+            @extend %imagenPIndex;
+        }
+    }
+
+    .textoBebidas{
+        grid-area: textoBebidas;
+        margin: 20px;
+        align-self: normal;
+        p {
+            color: $colorTextoImagenIndex;
+            font-family: $fontBebidasAccesorios;
+            @extend %estilo-x;
+        }
+        .gridIndexButton {
+            @extend %gridIndexButton;
+        }
+    }
+
+    .imagenAccesorios {
+        @include imagenBebidasAccesorios(imagenAccesorios);
+        img {
+            @extend %imgIndex;
+        }
+        p {
+            @extend %imagenPIndex;
+        }
+    }
+
+    .textoAccesorios {
+        grid-area: textoAccesorios;
+        margin: 20px;
+        align-self: normal;
+        p {
+            color: $colorTextoImagenIndex;
+            font-family: $fontBebidasAccesorios;
+            @extend %estilo-x;
+        }
+        .gridIndexButton {
+            @extend %gridIndexButton;
+        }
+    }
+
+    
+}
+
+.gridIndex{
+    display: grid;
+    background-color: rgb(163, 163, 204);
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5 0.5fr 0.1fr;
+    grid-template-areas:
+        "tituloPrincipal tituloPrincipal "
+        "imagenBebidas textoBebidas"
+        "imagenAccesorios textoAccesorios"
+        "footerflex footerflex";
+}

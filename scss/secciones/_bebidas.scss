@@ -1,0 +1,12 @@
+main {
+    article div img{
+       &:hover{
+              background-color: rgb(55, 55, 56);
+       }
+    }
+    div div div .separador{
+        background-color: rgb(247, 236, 16);
+        height: 5px;
+    }
+
+}

@@ -1,0 +1,44 @@
+footer{
+    div {
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            margin: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            background-color: brown;
+        }
+        p {
+           margin: 10px;
+            max-width: 20vw;
+            font-size: small;
+            display: inline;
+        }    
+    }
+    .table{
+        max-width: 100px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    ul {
+        max-width: 50vw;
+        margin: 10px;
+        margin-left: 40px;
+        padding-top: 15px;
+        li {
+            list-style:none;
+        }
+    }
+}
+
+
+.footerflex {
+    grid-area: footerflex;
+    flex-wrap: wrap;
+    display: flex;
+    color: blue;
+    background-color: rgb(146, 146, 163);
+    flex-direction: row;
+    justify-items: center;
+    justify-content: flex-start;
+}

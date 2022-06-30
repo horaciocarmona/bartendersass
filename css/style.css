@@ -1,0 +1,540 @@
+main .textoBebidas .gridIndexButton, main .textoAccesorios .gridIndexButton, main .textoBebidas p, main .textoAccesorios p {
+  font-size: calc(1em + 1vw);
+  line-height: 1em; }
+
+main .textoBebidas .gridIndexButton, main .textoAccesorios .gridIndexButton {
+  font-size: small;
+  background-color: darkgray;
+  transform: skew(-10deg);
+  transition: 3s;
+  padding: 1rem; }
+  main .textoBebidas .gridIndexButton:hover, main .textoAccesorios .gridIndexButton:hover {
+    background-color: #f1f17f;
+    transform: scale(1.2);
+    transition: 1s; }
+
+main .imagenBebidas img, main .imagenAccesorios img {
+  width: 50vw;
+  max-height: 80vh;
+  object-fit: fill; }
+
+main .imagenBebidas p, main .imagenAccesorios p {
+  background-color: brown;
+  color: #f0f05d;
+  padding-left: 1rem; }
+
+section .imagenCoctelGinTonic p, section .imagenCoctelKirRoyal p, section .imagenCoctelFitzgerald p {
+  max-width: 50vw;
+  color: #7171f3;
+  font-style: italic;
+  font-size: x-large;
+  margin: 10vw;
+  background-color: rgba(50, 14, 31, 0.5);
+  padding: 10px; }
+  section .imagenCoctelGinTonic p:hover, section .imagenCoctelKirRoyal p:hover, section .imagenCoctelFitzgerald p:hover {
+    animation: girando;
+    animation-duration: 3s;
+    animation-iteration-count: initial; }
+
+main .imagenCopasCristal img, main .imagenCoctelera img, main .imagenSetBoston img, main .imagenBarraCoctelera img, main .imagenPortadorCoctel img, main .imagenSetDeluxe img {
+  width: 20vw;
+  height: 40vh;
+  margin-left: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  object-fit: cover; }
+  main .imagenCopasCristal img:hover, main .imagenCoctelera img:hover, main .imagenSetBoston img:hover, main .imagenBarraCoctelera img:hover, main .imagenPortadorCoctel img:hover, main .imagenSetDeluxe img:hover {
+    transition: .2s;
+    filter: blur(2px); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  background-color: #a3a3cc; }
+
+.negrita {
+  color: black;
+  font-size: 25px;
+  /* font-style: italic;     */ }
+
+.navbar {
+  padding-bottom: 0px; }
+
+header nav .container-fluid {
+  background-color: #9292a3; }
+  header nav .container-fluid a {
+    color: bisque; }
+
+header h1 span {
+  margin: 5px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  animation-name: girando;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+main .tituloPrincipal {
+  grid-area: tituloPrincipal;
+  background-color: #aba6a6;
+  animation-name: tituloAnimacion;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  max-width: 100vw; }
+  main .tituloPrincipal h1 {
+    margin-top: 10px;
+    margin-left: 20vw;
+    margin-bottom: 0px;
+    font-size: 30px;
+    max-width: 60vw; }
+  main .tituloPrincipal h2 {
+    margin-top: 0px;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: 80vw; }
+  main .tituloPrincipal:hover {
+    transition: 2s;
+    background-color: #f37e7e; }
+
+main .imagenBebidas {
+  grid-area: imagenBebidas;
+  margin: 20px;
+  width: 50vw; }
+
+main .textoBebidas {
+  grid-area: textoBebidas;
+  margin: 20px;
+  align-self: normal; }
+  main .textoBebidas p {
+    color: #ecec77;
+    font-family: "Dancing Script", cursive; }
+
+main .imagenAccesorios {
+  grid-area: imagenAccesorios;
+  margin: 20px;
+  width: 50vw; }
+
+main .textoAccesorios {
+  grid-area: textoAccesorios;
+  margin: 20px;
+  align-self: normal; }
+  main .textoAccesorios p {
+    color: #ecec77;
+    font-family: "Dancing Script", cursive; }
+
+.gridIndex {
+  display: grid;
+  background-color: #a3a3cc;
+  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5 0.5fr 0.1fr;
+  grid-template-areas: "tituloPrincipal tituloPrincipal " "imagenBebidas textoBebidas" "imagenAccesorios textoAccesorios" "footerflex footerflex"; }
+
+footer div img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  background-color: brown; }
+
+footer div p {
+  margin: 10px;
+  max-width: 20vw;
+  font-size: small;
+  display: inline; }
+
+footer .table {
+  max-width: 100px;
+  margin: 10px;
+  font-size: 15px; }
+
+footer ul {
+  max-width: 50vw;
+  margin: 10px;
+  margin-left: 40px;
+  padding-top: 15px; }
+  footer ul li {
+    list-style: none; }
+
+.footerflex {
+  grid-area: footerflex;
+  flex-wrap: wrap;
+  display: flex;
+  color: blue;
+  background-color: #9292a3;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: flex-start; }
+
+section .tituloCoctel {
+  grid-area: tituloCoctel; }
+  section .tituloCoctel .separador {
+    background-color: #f7ec10;
+    height: 5px; }
+
+section .imagenCoctelGinTonic {
+  grid-area: imagenCoctelGinTonic;
+  background-image: url("../img/GinTonic.jpg");
+  background-size: cover;
+  height: 220vh;
+  margin: 10px; }
+
+section .imagenCoctelKirRoyal {
+  grid-area: imagenCoctelKirRoyal;
+  background-image: url("../img/KirRoyal.jpg");
+  background-size: cover;
+  height: 220vh;
+  margin: 10px; }
+
+section .imagenCoctelFitzgerald {
+  grid-area: imagenCoctelFitzgerald;
+  background-image: url("../img/Fitzgerald.jpg");
+  background-size: cover;
+  height: 220vh;
+  margin: 10px; }
+
+.gridCoctel {
+  display: grid;
+  background-color: #a3a3cc;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.08fr 1fr 1fr 1fr 0.08fr;
+  grid-template-areas: "tituloCoctel" "imagenCoctelGinTonic" "imagenCoctelKirRoyal" "imagenCoctelFitzgerald" "footerflex"; }
+
+main article div img:hover {
+  background-color: #373738; }
+
+main div div div .separador {
+  background-color: #f7ec10;
+  height: 5px; }
+
+main .tituloAccesorio {
+  grid-area: tituloAccesorio; }
+  main .tituloAccesorio .separador {
+    background-color: #f7ec10;
+    height: 5px; }
+
+main .imagenCopasCristal {
+  grid-area: imagenCopasCristal; }
+
+main .textoCopasCristal {
+  grid-area: textoCopasCristal;
+  max-width: 80px;
+  margin: 20px; }
+
+main .imagenCoctelera {
+  grid-area: imagenCoctelera; }
+
+main .textoCoctelera {
+  grid-area: textoCoctelera;
+  max-width: 80px;
+  margin: 20px; }
+
+main .imagenSetBoston {
+  grid-area: imagenSetBoston; }
+
+main .textoSetBoston {
+  grid-area: textoSetBoston;
+  max-width: 80px;
+  margin: 20px; }
+
+main .imagenBarraCoctelera {
+  grid-area: imagenBarraCoctelera; }
+
+main .textoBarraCoctelera {
+  grid-area: textoBarraCoctelera;
+  max-width: 80px;
+  margin: 20px; }
+
+main .imagenPortadorCoctel {
+  grid-area: imagenPortadorCoctel; }
+
+main .textoPortadorCoctel {
+  grid-area: textoPortadorCoctel;
+  max-width: 80px;
+  margin: 20px; }
+
+main .imagenSetDeluxe {
+  grid-area: imagenSetDeluxe; }
+
+main .textoSetDeluxe {
+  grid-area: textoSetDeluxe;
+  max-width: 80px;
+  margin: 20px; }
+
+.gridAccesoriosVenta {
+  display: grid;
+  background-color: #a3a3cc;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-areas: "tituloAccesorio tituloAccesorio tituloAccesorio tituloAccesorio tituloAccesorio tituloAccesorio " "imagenCopasCristal textoCopasCristal imagenCoctelera textoCoctelera imagenSetBoston textoSetBoston " "imagenBarraCoctelera textoBarraCoctelera imagenPortadorCoctel textoPortadorCoctel imagenSetDeluxe textoSetDeluxe " "footerflex footerflex footerflex footerflex footerflex footerflex "; }
+
+.formulario div div .separador {
+  background-color: #f7ec10;
+  height: 5px; }
+
+.formulario form input {
+  color: #202010;
+  border-radius: 15px;
+  text-align: center; }
+  .formulario form input:hover {
+    background-color: #f3a5a5; }
+  .formulario form input:focus {
+    width: 400px;
+    background-color: yellow; }
+
+.formulario form div select:hover {
+  background-color: #f3a5a5; }
+
+.formulario form div div textarea {
+  max-width: 60vw; }
+
+.formulario form div a img {
+  background-size: cover;
+  width: 10vw;
+  height: 10vh;
+  margin-bottom: 20px; }
+
+#botonEnvio:hover {
+  background-color: brown; }
+
+#exampleFormControlTextarea1:hover {
+  background-color: #f3a5a5; }
+
+@media (max-width: 460px) {
+  .formulario form div a img {
+    width: 30vw; }
+  .formulario form input:focus {
+    width: 300px; }
+  .gridIndex {
+    background-color: brown; }
+  main .imagenBebidas img {
+    width: 50vw;
+    height: 50vw; }
+  main .imagenAccesorios img {
+    width: 50vw;
+    height: 50vw; }
+  main .textoBebidas p {
+    margin-top: 5vh;
+    font-size: 10px;
+    font-family: sans-serif; }
+  main .textoAccesorios p {
+    margin-top: 7vh;
+    font-size: 10px;
+    font-family: sans-serif; }
+  .footerflex {
+    background-color: #9292a3;
+    flex-direction: column; }
+  .footerflex ul {
+    max-width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footerflex div p {
+    max-width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: inline;
+    font-size: x-small; }
+  main .tituloPrincipal h1 {
+    margin-top: 30px;
+    margin-left: 15px; }
+  main .tituloPrincipal h2 {
+    margin-left: 5px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    width: 100vw; }
+  main .textoBebidas .gridIndexButton {
+    padding-top: 5px;
+    background-color: darkgray;
+    transform: skew(-10deg);
+    transition: 3s;
+    font-size: 9px; }
+  main .textoAccesorios .gridIndexButton {
+    padding-top: 5px;
+    background-color: darkgray;
+    transform: skew(-10deg);
+    transition: 3s;
+    font-size: 9px; }
+  section .imagenCoctelGinTonic {
+    grid-area: imagenCoctelGinTonic;
+    background-image: url("../img/GinTonic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin: 5px; }
+  section .imagenCoctelKirRoyal {
+    grid-area: imagenCoctelKirRoyal;
+    background-image: url("../img/KirRoyal.jpg");
+    background-size: cover;
+    margin: 5px;
+    background-repeat: no-repeat;
+    height: 70vh; }
+  section .imagenCoctelFitzgerald {
+    grid-area: imagenCoctelFitzgerald;
+    background-image: url("../img/Fitzgerald.jpg");
+    background-size: cover;
+    margin: 5px;
+    background-repeat: no-repeat;
+    height: 70vh; }
+  section .imagenCoctelFitzgerald p {
+    width: 78vw;
+    color: #7171f3;
+    font-style: italic;
+    font-size: large;
+    background-color: rgba(50, 14, 31, 0.7);
+    margin: 10px;
+    padding: 2px; }
+  section .imagenCoctelKirRoyal p {
+    width: 78vw;
+    color: #7171f3;
+    font-style: italic;
+    font-size: large;
+    margin: 10px;
+    background-color: rgba(50, 14, 31, 0.7);
+    padding: 2px; }
+  section .imagenCoctelGinTonic p {
+    max-width: 78vw;
+    color: #7171f3;
+    font-style: italic;
+    font-size: large;
+    margin: 10px;
+    /* background: rgba(34, 32, 32, 0.1); */
+    background-color: rgba(50, 14, 31, 0.7);
+    padding: 2px;
+    /* opacity: 4; */ }
+  .gridBebidasVenta {
+    display: grid;
+    background-color: #f36a6a;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-areas: "headerflex headerflex " "imagenCampari imagenPuertoIndias" "imagenBramble imagenCapel " "imagenNegroni imagenHeraclito" "imagenJackDaniels imagenRonAvana " "footerflex footerflex "; }
+  .imagenPuertoIndias img {
+    width: 25vw;
+    /* height: 100px; */ }
+  .imagenJackDaniels img {
+    width: 40vw; }
+  .imagenRonAvana img {
+    width: 40vw; }
+  .imagenNegroni img {
+    width: 40vw; }
+  .imagenBramble img {
+    width: 25vw; }
+  .imagenCampari img {
+    width: 25vw;
+    /* height: 40vh; */ }
+  .imagenCapel img {
+    width: 25vw; }
+  .imagenHeraclito img {
+    width: 25vw; }
+  .gridAccesoriosVenta {
+    display: grid;
+    background-color: #f36a6a;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.1fr;
+    grid-template-areas: "tituloAccesorio" "imagenCopasCristal" "textoCopasCristal" "imagenCoctelera" "textoCoctelera" "imagenSetBoston" "textoSetBoston " "imagenBarraCoctelera" "textoBarraCoctelera" "imagenPortadorCoctel" "textoPortadorCoctel" "imagenSetDeluxe" "textoSetDeluxe " "footerflex "; }
+  main .imagenSetBoston img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0%;
+    margin-top: 0%; }
+  main .imagenCoctelera img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0%;
+    margin-top: 0%; }
+  main .imagenCopasCristal img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0px; }
+  main .imagenBarraCoctelera img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0%;
+    margin-top: 0%; }
+  main .imagenPortadorCoctel img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0%;
+    margin-top: 0%; }
+  main .imagenSetDeluxe img {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 0%;
+    margin-top: 0%; }
+  .gridContacto {
+    background-color: #f36a6a; }
+  header h1 span {
+    margin: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    animation-name: girando;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .negrita {
+    color: black;
+    font-size: 15px; } }
+
+@keyframes tituloAnimacion {
+  0% {
+    background-image: linear-gradient(0deg, #b2b4b4 0%, #f6d898 100%); }
+  25% {
+    background-image: linear-gradient(0deg, #b2b4b4 0%, #f6d898 100%);
+    opacity: 0.5; }
+  50% {
+    background-image: linear-gradient(0deg, #b2b4b4 0%, #f6d898 100%);
+    opacity: 0.7; }
+  75% {
+    background-image: linear-gradient(0deg, #b2b4b4 0%, #f6d898 100%);
+    opacity: 0.8; }
+  100% {
+    background-image: linear-gradient(0deg, #b2b4b4 0%, #f6d898 100%);
+    opacity: 0.9; } }
+
+@keyframes girando {
+  0% {
+    transform: rotatex(0deg); }
+  5% {
+    transform: rotatex(20deg); }
+  10% {
+    transform: rotatex(40deg); }
+  15% {
+    transform: rotatex(60deg); }
+  20% {
+    transform: rotatex(80deg); }
+  25% {
+    transform: rotatex(100deg); }
+  30% {
+    transform: rotatex(120deg); }
+  35% {
+    transform: rotatex(140deg); }
+  40% {
+    transform: rotatex(160deg); }
+  45% {
+    transform: rotatex(180deg); }
+  50% {
+    transform: rotatex(200deg); }
+  60% {
+    transform: rotatex(220deg); }
+  65% {
+    transform: rotatex(240deg); }
+  70% {
+    transform: rotatex(260deg); }
+  75% {
+    transform: rotatex(280deg); }
+  80% {
+    transform: rotatex(300deg); }
+  85% {
+    transform: rotatex(320deg); }
+  90% {
+    transform: rotatex(340deg); }
+  95% {
+    transform: rotatex(360deg); }
+  100% {
+    transform: rotatex(380deg); } }

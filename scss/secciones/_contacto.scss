@@ -1,0 +1,55 @@
+.formulario{
+    div div .separador{
+            background-color: rgb(247, 236, 16);
+            height: 5px;
+        }
+   
+    form{
+        input{
+            color: rgb(32, 32, 16);
+            border-radius: 15px;
+            text-align: center;
+            &:hover{
+                background-color: rgb(243, 165, 165);
+            }
+            &:focus{
+                width: 400px;
+                background-color: yellow;
+            }
+        }
+        div{
+            select {
+                &:hover{
+                    background-color: rgb(243, 165, 165);
+                }
+            }
+            div{
+                textarea{
+                    max-width: 60vw;
+                
+                }    
+            }
+            a {
+                img{
+                    background-size: cover;
+                    width: 10vw;
+                    height: 10vh;
+                    margin-bottom: 20px;
+                
+                }
+            }
+        }
+    }
+}
+
+#botonEnvio{
+     &:hover {
+        background-color: brown;
+     }
+}
+
+#exampleFormControlTextarea1{
+   &:hover{
+    background-color: rgb(243, 165, 165);
+   } 
+}

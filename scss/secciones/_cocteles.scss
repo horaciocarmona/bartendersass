@@ -1,0 +1,44 @@
+section{
+    .tituloCoctel{
+        grid-area: tituloCoctel;
+            .separador{
+                background-color: rgb(247, 236, 16);
+                height: 5px;
+            }
+    }
+
+    .imagenCoctelGinTonic{
+        @include coctelesImg(imagenCoctelGinTonic,url("../img/GinTonic.jpg"));
+        p{
+            @extend %coctelesP;
+        }
+    }
+    .imagenCoctelKirRoyal{
+        @include coctelesImg(imagenCoctelKirRoyal,url("../img/KirRoyal.jpg"));
+        p{
+            @extend %coctelesP;
+        }
+
+    }
+    .imagenCoctelFitzgerald{
+        @include coctelesImg(imagenCoctelFitzgerald,url("../img/Fitzgerald.jpg"));
+        p{
+           @extend %coctelesP;
+        }
+
+    }
+}
+
+.gridCoctel {
+    display: grid;
+    background-color: rgb(163, 163, 204);
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 1fr 1fr 1fr 0.08fr;
+    grid-template-areas:
+        "tituloCoctel"
+        "imagenCoctelGinTonic"
+        "imagenCoctelKirRoyal"
+        "imagenCoctelFitzgerald"
+        "footerflex";
+}
