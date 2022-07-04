@@ -31,13 +31,25 @@ main {
 
     .textoBebidas{
         grid-area: textoBebidas;
-        margin: 20px;
+        margin: 40px 20px 20px 0px;
         align-self: normal;
-        p {
+        h3{
             color: $colorTextoImagenIndex;
             font-family: $fontBebidasAccesorios;
-            @extend %estilo-x;
+            font-size:xx-large ;
         }
+        p {
+            color: $colorTextoImagenIndex;
+            background-color: rgba(128, 128, 128,0.7) ;
+            max-width: 40vw;
+            font-size: 25px;
+            font-family: $fontTextoPGrid;
+        }
+        @extend %estilo-x;
+        &:hover {
+            transform: scale(0.8);
+            transition: 1s;
+        }    
         .gridIndexButton {
             @extend %gridIndexButton;
         }
@@ -55,13 +67,26 @@ main {
 
     .textoAccesorios {
         grid-area: textoAccesorios;
-        margin: 20px;
+        margin: 40px 20px 20px 0px;
         align-self: normal;
-        p {
+        h4{
             color: $colorTextoImagenIndex;
             font-family: $fontBebidasAccesorios;
+            font-size:xx-large ;
+        }
+        p {
+            color: $colorTextoImagenIndex;
+            font-family: $fontTextoPGrid;
+            background-color: rgba(128, 128, 128,0.7) ;
+            max-width: 40vw;
+            font-size: 25px;
             @extend %estilo-x;
         }
+        &:hover {
+            transform: scale(0.8);
+            transition: 1s;
+        }    
+
         .gridIndexButton {
             @extend %gridIndexButton;
         }
@@ -72,7 +97,7 @@ main {
 
 .gridIndex{
     display: grid;
-    background-color: rgb(163, 163, 204);
+    // background-color: rgb(163, 163, 204);
     align-items: stretch;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.5 0.5fr 0.1fr;

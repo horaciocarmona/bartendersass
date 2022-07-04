@@ -1,55 +1,51 @@
-.formulario{
-    div div .separador{
-            background-color: rgb(247, 236, 16);
-            height: 5px;
-        }
-   
-    form{
-        input{
+.formulario {
+    div div .separador {
+        background-color: $colorTextoBebidas;
+        height: 5px;
+    }
+
+    form {
+        input {
             color: rgb(32, 32, 16);
             border-radius: 15px;
             text-align: center;
-            &:hover{
+
+            &:hover {
                 background-color: rgb(243, 165, 165);
             }
-            &:focus{
+
+            &:focus:not(#flexCheckDefault):not(#exampleRadios1):not(#exampleRadios3):not(#exampleRadios2) {
                 width: 400px;
                 background-color: yellow;
             }
         }
-        div{
+
+        div {
             select {
-                &:hover{
+                &:hover {
                     background-color: rgb(243, 165, 165);
                 }
             }
-            div{
-                textarea{
+
+            div {
+                textarea {
                     max-width: 60vw;
-                
-                }    
-            }
-            a {
-                img{
-                    background-size: cover;
-                    width: 10vw;
-                    height: 10vh;
-                    margin-bottom: 20px;
-                
+
                 }
             }
+
         }
     }
 }
 
-#botonEnvio{
-     &:hover {
+#botonEnvio {
+    &:hover {
         background-color: brown;
-     }
+    }
 }
 
-#exampleFormControlTextarea1{
-   &:hover{
-    background-color: rgb(243, 165, 165);
-   } 
+#exampleFormControlTextarea1 {
+    &:hover {
+        background-color: rgb(243, 165, 165);
+    }
 }

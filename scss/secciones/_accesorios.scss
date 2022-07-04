@@ -2,7 +2,7 @@ main{
     .tituloAccesorio{
         grid-area: tituloAccesorio;
         .separador{
-            background-color: rgb(247, 236, 16);
+            background-color: $colorTextoBebidas;
             height: 5px;
         }
     }
@@ -74,7 +74,6 @@ main{
 
 .gridAccesoriosVenta {
     display: grid;
-    background-color: rgb(163, 163, 204);
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 1fr 1fr 0.1fr;

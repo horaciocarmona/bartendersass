@@ -18,24 +18,23 @@
 }
 
 %imgIndex{
-    width: 50vw;  
-    max-height: 80vh;
+    width: 95vw;
     object-fit: fill;
-}    
+}
 
 %imagenPIndex{
-    background-color: brown;
-    color: rgb(240, 240, 93);
+    background-color:$colorTextoImagenIndex;
+    color:black;
     padding-left: 1rem;
 }
 
 %coctelesP{
     max-width: 50vw;
-    color: rgb(113, 113, 243);
+    color: $colorTextoBebidas;
     font-style: italic;
     font-size: x-large;
     margin: 10vw;
-    background-color: rgba(50, 14, 31, 0.5);
+    background-color:rgba(128, 128, 128, 0.5) ;
     padding: 10px;
     &:hover{
         animation: girando;
@@ -54,5 +53,5 @@
     &:hover{
         transition: .2s;
         filter: blur(2px);
-    } 
+    }
 }

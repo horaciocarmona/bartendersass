@@ -4,6 +4,7 @@
     margin-bottom: $margin_bottom;
     font-size: $font_size;
     max-width: $max_width;
+    text-align: center;
 }
 
 @mixin accesoriosTexto ($grid_area) {
