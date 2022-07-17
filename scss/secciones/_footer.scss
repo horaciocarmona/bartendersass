@@ -26,8 +26,9 @@ footer {
 
         li {
             list-style: none;
+
             a i {
-                color:$colorNav;                
+                color: $colorNav;
             }
         }
     }
@@ -38,7 +39,7 @@ footer {
     grid-area: footerflex;
     flex-wrap: wrap;
     display: flex;
-    color:$colorNav;
+    color: $colorNav;
     background-color: $colorFooter;
     flex-direction: row;
     justify-content: space-between;
