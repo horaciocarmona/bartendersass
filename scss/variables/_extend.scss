@@ -18,7 +18,7 @@
 }
 
 %imgIndex{
-    width: 95vw;
+    width: 97vw;
     object-fit: fill;
 }
 
@@ -35,7 +35,7 @@
     font-size: x-large;
     margin: 10vw;
     background-color:rgba(128, 128, 128, 0.5) ;
-    padding: 10px;
+    padding: 15px;
     &:hover{
         animation: girando;
         animation-duration: 3s;

@@ -15,7 +15,7 @@ main .textoBebidas .gridIndexButton, main .textoAccesorios .gridIndexButton {
     transition: 1s; }
 
 main .imagenBebidas img, main .imagenAccesorios img {
-  width: 95vw;
+  width: 97vw;
   object-fit: fill; }
 
 main .imagenBebidas p, main .imagenAccesorios p {
@@ -30,7 +30,7 @@ section .imagenCoctelGinTonic p, section .imagenCoctelKirRoyal p, section .image
   font-size: x-large;
   margin: 10vw;
   background-color: rgba(128, 128, 128, 0.5);
-  padding: 10px; }
+  padding: 15px; }
   section .imagenCoctelGinTonic p:hover, section .imagenCoctelKirRoyal p:hover, section .imagenCoctelFitzgerald p:hover {
     animation: girando;
     animation-duration: 3s;
@@ -53,7 +53,8 @@ main .imagenCopasCristal img, main .imagenCoctelera img, main .imagenSetBoston i
 
 .body {
   background-color: #455E87;
-  max-width: 100vw; }
+  max-width: 100vw;
+  max-height: 100vh; }
 
 .negrita {
   color: black;
@@ -118,8 +119,9 @@ main .textoBebidas {
     color: #FFE3C2;
     background-color: rgba(128, 128, 128, 0.7);
     max-width: 40vw;
-    font-size: 25px;
-    font-family: "Gentium Book Plus", serif; }
+    font-size: 20px;
+    font-family: "Gentium Book Plus", serif;
+    padding: 15px; }
   main .textoBebidas:hover {
     transform: scale(0.8);
     transition: 1s; }
@@ -141,8 +143,9 @@ main .textoAccesorios {
     color: #FFE3C2;
     font-family: "Gentium Book Plus", serif;
     background-color: rgba(128, 128, 128, 0.7);
+    padding: 15px;
     max-width: 40vw;
-    font-size: 25px; }
+    font-size: 20px; }
   main .textoAccesorios:hover {
     transform: scale(0.8);
     transition: 1s; }
@@ -153,6 +156,31 @@ main .textoAccesorios {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 0.5 0.5fr 0.1fr;
   grid-template-areas: "tituloPrincipal tituloPrincipal " "imagenBebidas textoBebidas" "imagenAccesorios textoAccesorios" "footerflex footerflex"; }
+
+.gridCorreo {
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: 0.7fr 0.1fr 0.01fr;
+  grid-template-areas: "correo celular" "correo1 celular1" "correo2 celular2"; }
+
+.correo {
+  grid-area: correo; }
+
+.celular {
+  grid-area: celular; }
+
+.correo1 {
+  grid-area: correo1; }
+
+.celular1 {
+  grid-area: celular1; }
+
+.correo2 {
+  grid-area: correo2; }
+
+.celular2 {
+  grid-area: celular2; }
 
 footer div img {
   max-width: 50px;
@@ -168,28 +196,49 @@ footer div p {
   font-size: small;
   display: inline; }
 
-footer .table {
-  max-width: 100px;
-  margin: 10px;
-  font-size: 15px; }
-
 footer ul {
   max-width: 50vw;
-  margin: 10px;
-  margin-left: 40px;
-  padding-top: 15px; }
+  margin: 10px 200px 10px 50px;
+  padding-left: 0px; }
   footer ul li {
     list-style: none; }
+    footer ul li a i {
+      color: #7891ba; }
 
 .footerflex {
   grid-area: footerflex;
   flex-wrap: wrap;
   display: flex;
-  color: blue;
+  color: #7891ba;
   background-color: #FFE3C2;
   flex-direction: row;
+  justify-content: space-between; }
+
+.gridCorreo {
+  display: grid;
   justify-items: center;
-  justify-content: flex-start; }
+  justify-content: space-between;
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: 0.7fr 0.1fr 0.01fr;
+  grid-template-areas: "correo celular" "correo1 celular1" "correo2 celular2"; }
+
+.correo {
+  grid-area: correo; }
+
+.celular {
+  grid-area: celular; }
+
+.correo1 {
+  grid-area: correo1; }
+
+.celular1 {
+  grid-area: celular1; }
+
+.correo2 {
+  grid-area: correo2; }
+
+.celular2 {
+  grid-area: celular2; }
 
 section .tituloCoctel {
   grid-area: tituloCoctel; }
@@ -318,6 +367,10 @@ main .textoSetDeluxe {
 .formulario form div div textarea {
   max-width: 60vw; }
 
+.formulario form div iframe {
+  max-width: 90vw;
+  padding: 20px; }
+
 #botonEnvio:hover {
   background-color: brown; }
 
@@ -329,30 +382,33 @@ main .textoSetDeluxe {
     width: 30vw; }
   .formulario form input:focus:not(#flexCheckDefault):not(#exampleRadios1):not(#exampleRadios3):not(#exampleRadios2) {
     width: 200px; }
-  .gridIndex {
-    background-color: brown; }
   main .imagenBebidas img {
     width: 50vw;
     height: 50vw; }
   main .imagenAccesorios img {
     width: 50vw;
     height: 50vw; }
+  footer .gridCorreo {
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 0.5fr 0.01fr 0.01fr;
+    justify-items: center; }
+  main .textoBebidas {
+    margin-top: 20px; }
   main .textoBebidas h3 {
     font-size: 15px;
     font-family: sans-serif; }
   main .textoBebidas p {
-    margin-top: 1vh;
     font-size: 10px;
     font-family: sans-serif; }
+  main .textoAccesorios {
+    margin-top: 3px; }
   main .textoAccesorios h4 {
     font-size: 15px;
     font-family: sans-serif; }
   main .textoAccesorios p {
-    margin-top: 1vh;
     font-size: 10px;
     font-family: sans-serif; }
   .footerflex {
-    background-color: #9292a3;
     flex-direction: column; }
   .footerflex ul {
     max-width: 35vw;
@@ -366,8 +422,7 @@ main .textoSetDeluxe {
     display: inline;
     font-size: x-small; }
   main .tituloPrincipal h1 {
-    margin-top: 30px;
-    margin-left: 15px; }
+    margin-top: 30px; }
   main .tituloPrincipal h2 {
     margin: 20px;
     font-size: 10px;
@@ -375,13 +430,11 @@ main .textoSetDeluxe {
     width: 100vw; }
   main .textoBebidas .gridIndexButton {
     padding-top: 5px;
-    background-color: darkgray;
     transform: skew(-10deg);
     transition: 3s;
     font-size: 9px; }
   main .textoAccesorios .gridIndexButton {
     padding-top: 5px;
-    background-color: darkgray;
     transform: skew(-10deg);
     transition: 3s;
     font-size: 9px; }
@@ -407,34 +460,25 @@ main .textoSetDeluxe {
     background-repeat: no-repeat;
     height: 70vh; }
   section .imagenCoctelFitzgerald p {
-    width: 78vw;
-    color: #7171f3;
+    width: 86vw;
     font-style: italic;
     font-size: large;
-    background-color: rgba(50, 14, 31, 0.7);
     margin: 10px;
-    padding: 2px; }
+    padding: 15px; }
   section .imagenCoctelKirRoyal p {
-    width: 78vw;
-    color: #7171f3;
+    width: 86vw;
     font-style: italic;
     font-size: large;
     margin: 10px;
-    background-color: rgba(50, 14, 31, 0.7);
-    padding: 2px; }
+    padding: 15px; }
   section .imagenCoctelGinTonic p {
-    max-width: 78vw;
-    color: #7171f3;
+    max-width: 86vw;
     font-style: italic;
     font-size: large;
     margin: 10px;
-    /* background: rgba(34, 32, 32, 0.1); */
-    background-color: rgba(50, 14, 31, 0.7);
-    padding: 2px;
-    /* opacity: 4; */ }
+    padding: 15px; }
   .gridBebidasVenta {
     display: grid;
-    background-color: #f36a6a;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
@@ -459,7 +503,6 @@ main .textoSetDeluxe {
     width: 25vw; }
   .gridAccesoriosVenta {
     display: grid;
-    background-color: #f36a6a;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.1fr;
@@ -493,8 +536,6 @@ main .textoSetDeluxe {
     height: 60vh;
     margin-bottom: 0%;
     margin-top: 0%; }
-  .gridContacto {
-    background-color: #f36a6a; }
   header h1 span {
     margin: 5px;
     padding-bottom: 5px;

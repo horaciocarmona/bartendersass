@@ -1,14 +1,17 @@
-.body .containter{
+.body .containter {
     max-width: 99%;
 }
+
 main {
     background-color: $colorDeFondo;
-    article div img{
-       &:hover{
-              background-color: rgb(55, 55, 56);
-       }
+
+    article div img {
+        &:hover {
+            background-color: rgb(55, 55, 56);
+        }
     }
-    div div div .separador{
+
+    div div div .separador {
         background-color: $colorTextoBebidas;
         height: 5px;
     }

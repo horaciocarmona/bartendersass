@@ -3,22 +3,19 @@
         width: 30vw;
     }
 
-    .formulario form{
-        input{
-            &:focus:not(#flexCheckDefault):not(#exampleRadios1):not(#exampleRadios3):not(#exampleRadios2){
+    .formulario form {
+        input {
+            &:focus:not(#flexCheckDefault):not(#exampleRadios1):not(#exampleRadios3):not(#exampleRadios2) {
                 width: 200px;
             }
 
         }
     }
 
-    .gridIndex {
-        background-color: brown;
-    }
-
-    main .imagenBebidas img{
-            width: 50vw;
-            height: 50vw;
+    
+    main .imagenBebidas img {
+        width: 50vw;
+        height: 50vw;
     }
 
     main .imagenAccesorios img {
@@ -26,16 +23,28 @@
         height: 50vw;
     }
 
+    footer .gridCorreo {
+        grid-template-columns: 1fr 0.7fr;
+        grid-template-rows: 0.5fr 0.01fr 0.01fr;
+        justify-items: center;
+    }
+    
+    main .textoBebidas {
+        margin-top: 20px;
+    }
 
     main .textoBebidas h3 {
         font-size: 15px;
-        font-family:$fontSansSerif;
+        font-family: $fontSansSerif;
     }
 
     main .textoBebidas p {
-        margin-top: 1vh;
         font-size: 10px;
-        font-family:$fontSansSerif;
+        font-family: $fontSansSerif;
+    }
+
+    main .textoAccesorios {
+        margin-top: 3px;
     }
 
 
@@ -45,17 +54,15 @@
     }
 
     main .textoAccesorios p {
-        margin-top: 1vh;
         font-size: 10px;
         font-family: $fontSansSerif;
     }
 
     .footerflex {
-        background-color: rgb(146, 146, 163);
         flex-direction: column;
     }
 
-    .footerflex ul{
+    .footerflex ul {
         max-width: 35vw;
         display: flex;
         align-items: center;
@@ -68,12 +75,11 @@
         margin-bottom: 0%;
         display: inline;
         font-size: x-small;
-    
+
     }
 
     main .tituloPrincipal h1 {
         margin-top: 30px;
-        margin-left: 15px;
     }
 
     main .tituloPrincipal h2 {
@@ -85,7 +91,7 @@
 
     main .textoBebidas .gridIndexButton {
         padding-top: 5px;
-        background-color: darkgray;
+        // background-color: darkgray;
         transform: skew(-10deg);
         transition: 3s;
         font-size: 9px;
@@ -93,7 +99,7 @@
 
     main .textoAccesorios .gridIndexButton {
         padding-top: 5px;
-        background-color: darkgray;
+        // background-color: darkgray;
         transform: skew(-10deg);
         transition: 3s;
         font-size: 9px;
@@ -131,43 +137,39 @@
     }
 
     section .imagenCoctelFitzgerald p {
-        width: 78vw;
-        color: rgb(113, 113, 243);
+        width: 86vw;
+        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
-        background-color: rgba(50, 14, 31, 0.7);
-
+        // background-color: rgba(50, 14, 31, 0.7);
         margin: 10px;
-        padding: 2px;
+        padding:15px;
     }
 
     section .imagenCoctelKirRoyal p {
-        width: 78vw;
-        color: rgb(113, 113, 243);
+        width: 86vw;
+        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
         margin: 10px;
-        background-color: rgba(50, 14, 31, 0.7);
-
-        padding: 2px;
+        // background-color: rgba(50, 14, 31, 0.7);
+        padding: 15px;
     }
 
     section .imagenCoctelGinTonic p {
-        max-width: 78vw;
-        color: rgb(113, 113, 243);
+        max-width: 86vw;
+        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
         margin: 10px;
-        /* background: rgba(34, 32, 32, 0.1); */
-        background-color: rgba(50, 14, 31, 0.7);
-        padding: 2px;
-        /* opacity: 4; */
+        // background-color: rgba(50, 14, 31, 0.7);
+        padding: 15px;
 
     }
 
     .gridBebidasVenta {
         display: grid;
-        background-color: rgb(243, 106, 106);
+        // background-color: rgb(243, 106, 106);
         align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
@@ -216,7 +218,7 @@
 
     .gridAccesoriosVenta {
         display: grid;
-        background-color: rgb(243, 106, 106);
+        // background-color: rgb(243, 106, 106);
         align-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.1fr;
@@ -279,10 +281,6 @@
         height: 60vh;
         margin-bottom: 0%;
         margin-top: 0%;
-    }
-
-    .gridContacto {
-        background-color: rgb(243, 106, 106);
     }
 
     header h1 span {

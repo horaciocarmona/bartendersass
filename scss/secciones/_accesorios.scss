@@ -1,71 +1,82 @@
-main{
-    .tituloAccesorio{
+main {
+    .tituloAccesorio {
         grid-area: tituloAccesorio;
-        .separador{
+
+        .separador {
             background-color: $colorTextoBebidas;
             height: 5px;
         }
     }
-    .imagenCopasCristal{
+
+    .imagenCopasCristal {
         grid-area: imagenCopasCristal;
-        img{
+
+        img {
             @extend %accesoriosImg;
         }
     }
+
     .textoCopasCristal {
         @include accesoriosTexto(textoCopasCristal)
     }
 
-    .imagenCoctelera{
+    .imagenCoctelera {
         grid-area: imagenCoctelera;
 
-        img{
+        img {
             @extend %accesoriosImg;
         }
     }
+
     .textoCoctelera {
         @include accesoriosTexto(textoCoctelera)
     }
 
-    .imagenSetBoston{
+    .imagenSetBoston {
         grid-area: imagenSetBoston;
 
-        img{
+        img {
             @extend %accesoriosImg;
         }
     }
+
     .textoSetBoston {
         @include accesoriosTexto(textoSetBoston)
     }
 
-    .imagenBarraCoctelera{
+    .imagenBarraCoctelera {
         grid-area: imagenBarraCoctelera;
 
-        img{
+        img {
             @extend %accesoriosImg;
 
         }
     }
+
     .textoBarraCoctelera {
         @include accesoriosTexto(textoBarraCoctelera)
     }
-   
-    .imagenPortadorCoctel{
+
+    .imagenPortadorCoctel {
         grid-area: imagenPortadorCoctel;
-        img{
+
+        img {
             @extend %accesoriosImg;
         }
     }
+
     .textoPortadorCoctel {
         @include accesoriosTexto(textoPortadorCoctel)
     }
 
-    .imagenSetDeluxe{
+    .imagenSetDeluxe {
         grid-area: imagenSetDeluxe;
-        img{
+
+        img {
             @extend %accesoriosImg;
         }
     }
+
     .textoSetDeluxe {
         @include accesoriosTexto(textoSetDeluxe)
     }

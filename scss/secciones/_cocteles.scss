@@ -1,29 +1,35 @@
-section{
-    .tituloCoctel{
+section {
+    .tituloCoctel {
         grid-area: tituloCoctel;
-            .separador{
-                background-color: $colorTextoBebidas;
-                height: 5px;
-            }
+
+        .separador {
+            background-color: $colorTextoBebidas;
+            height: 5px;
+        }
     }
 
-    .imagenCoctelGinTonic{
-        @include coctelesImg(imagenCoctelGinTonic,url("../img/GinTonic.jpg"));
-        p{
+    .imagenCoctelGinTonic {
+        @include coctelesImg(imagenCoctelGinTonic, url("../img/GinTonic.jpg"));
+
+        p {
             @extend %coctelesP;
         }
     }
-    .imagenCoctelKirRoyal{
-        @include coctelesImg(imagenCoctelKirRoyal,url("../img/KirRoyal.jpg"));
-        p{
+
+    .imagenCoctelKirRoyal {
+        @include coctelesImg(imagenCoctelKirRoyal, url("../img/KirRoyal.jpg"));
+
+        p {
             @extend %coctelesP;
         }
 
     }
-    .imagenCoctelFitzgerald{
-        @include coctelesImg(imagenCoctelFitzgerald,url("../img/Fitzgerald.jpg"));
-        p{
-           @extend %coctelesP;
+
+    .imagenCoctelFitzgerald {
+        @include coctelesImg(imagenCoctelFitzgerald, url("../img/Fitzgerald.jpg"));
+
+        p {
+            @extend %coctelesP;
         }
 
     }
