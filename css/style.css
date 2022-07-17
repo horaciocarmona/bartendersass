@@ -162,8 +162,7 @@ footer div img {
   max-height: 50px;
   margin: 5px;
   padding-bottom: 5px;
-  padding-left: 5px;
-  background-color: brown; }
+  padding-left: 5px; }
 
 footer div p {
   margin: 10px;
@@ -194,7 +193,7 @@ footer ul {
   justify-items: center;
   justify-content: space-between;
   grid-template-columns: 1fr 0.7fr;
-  grid-template-rows: 0.7fr 0.1fr 0.01fr;
+  grid-template-rows: 0.1fr 0.01fr 0.01fr;
   grid-template-areas: "correo celular" "correo1 celular1" "correo2 celular2"; }
 
 .correo {
