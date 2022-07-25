@@ -75,6 +75,26 @@ main {
         p {
             @extend %imagenPIndex;
         }
+
+        .arriba {
+            background-color: $colorNav;
+            margin-left: 90vw;
+            width: 100vw;
+            padding: 5px;
+
+            &:hover {
+                background-color: rgb(241, 241, 127);
+                transform: scale(1.2);
+            }
+
+            i {
+                &:hover {
+                    background-color: rgb(241, 241, 127);
+                    transform: scale(1.2);
+                }
+            }
+        }
+
     }
 
     .textoAccesorios {
@@ -113,7 +133,6 @@ main {
 
 .gridIndex {
     display: grid;
-    // background-color: rgb(163, 163, 204);
     align-items: stretch;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.5 0.5fr 0.1fr;

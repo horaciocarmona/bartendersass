@@ -58,8 +58,7 @@ main .imagenCopasCristal img, main .imagenCoctelera img, main .imagenSetBoston i
 
 .negrita {
   color: black;
-  font-size: 25px;
-  /* font-style: italic;     */ }
+  font-size: 25px; }
 
 .navbar {
   padding-bottom: 0px; }
@@ -130,6 +129,17 @@ main .imagenAccesorios {
   grid-area: imagenAccesorios;
   margin: 20px;
   width: 50vw; }
+  main .imagenAccesorios .arriba {
+    background-color: #7891ba;
+    margin-left: 90vw;
+    width: 100vw;
+    padding: 5px; }
+    main .imagenAccesorios .arriba:hover {
+      background-color: #f1f17f;
+      transform: scale(1.2); }
+    main .imagenAccesorios .arriba i:hover {
+      background-color: #f1f17f;
+      transform: scale(1.2); }
 
 main .textoAccesorios {
   grid-area: textoAccesorios;
@@ -234,6 +244,21 @@ section .imagenCoctelKirRoyal {
   height: 220vh;
   margin: 10px; }
 
+section .arriba {
+  width: 97vw;
+  margin: 5px;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+  grid-area: arriba; }
+  section .arriba i {
+    width: 50px;
+    margin: 0px 5px 10px 5px;
+    padding: 10px 5px 3px 15px;
+    background-color: #7891ba; }
+    section .arriba i:hover {
+      background-color: #f1f17f; }
+
 section .imagenCoctelFitzgerald {
   grid-area: imagenCoctelFitzgerald;
   background-image: url("../img/Fitzgerald.jpg");
@@ -246,8 +271,8 @@ section .imagenCoctelFitzgerald {
   align-items: center;
   max-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
-  grid-template-areas: "tituloCoctel" "imagenCoctelGinTonic" "imagenCoctelKirRoyal" "imagenCoctelFitzgerald" "footerflex"; }
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "tituloCoctel" "imagenCoctelGinTonic" "imagenCoctelKirRoyal" "imagenCoctelFitzgerald" "arriba" "footerflex"; }
 
 .body .containter {
   max-width: 99%; }
@@ -362,6 +387,8 @@ main .textoSetDeluxe {
   main .imagenAccesorios img {
     width: 50vw;
     height: 50vw; }
+  main .imagenAccesorios .arriba {
+    display: none; }
   footer .gridCorreo {
     grid-template-columns: 1fr 0.7fr;
     grid-template-rows: 0.5fr 0.01fr 0.01fr;
@@ -469,8 +496,7 @@ main .textoSetDeluxe {
   .imagenBramble img {
     width: 25vw; }
   .imagenCampari img {
-    width: 25vw;
-    /* height: 40vh; */ }
+    width: 25vw; }
   .imagenCapel img {
     width: 25vw; }
   .imagenHeraclito img {

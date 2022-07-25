@@ -23,6 +23,10 @@
         height: 50vw;
     }
 
+    main .imagenAccesorios .arriba {
+        display: none;
+    }
+
     footer .gridCorreo {
         grid-template-columns: 1fr 0.7fr;
         grid-template-rows: 0.5fr 0.01fr 0.01fr;
@@ -91,7 +95,6 @@
 
     main .textoBebidas .gridIndexButton {
         padding-top: 5px;
-        // background-color: darkgray;
         transform: skew(-10deg);
         transition: 3s;
         font-size: 9px;
@@ -138,38 +141,31 @@
 
     section .imagenCoctelFitzgerald p {
         width: 86vw;
-        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
-        // background-color: rgba(50, 14, 31, 0.7);
         margin: 10px;
         padding: 15px;
     }
 
     section .imagenCoctelKirRoyal p {
         width: 86vw;
-        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
         margin: 10px;
-        // background-color: rgba(50, 14, 31, 0.7);
         padding: 15px;
     }
 
     section .imagenCoctelGinTonic p {
         max-width: 86vw;
-        // color: rgb(113, 113, 243);
         font-style: italic;
         font-size: large;
         margin: 10px;
-        // background-color: rgba(50, 14, 31, 0.7);
         padding: 15px;
 
     }
 
     .gridBebidasVenta {
         display: grid;
-        // background-color: rgb(243, 106, 106);
         align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
@@ -205,7 +201,6 @@
 
     .imagenCampari img {
         width: 25vw;
-        /* height: 40vh; */
     }
 
     .imagenCapel img {
@@ -218,7 +213,6 @@
 
     .gridAccesoriosVenta {
         display: grid;
-        // background-color: rgb(243, 106, 106);
         align-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.1fr;
